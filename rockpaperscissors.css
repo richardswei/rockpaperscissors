@@ -1,0 +1,82 @@
+table, th, td {
+	width: 90%;
+	margin: 5px;
+	text-align: center;
+	border: 2px white solid;
+	border-collapse: collapse;
+	padding: 5px 25px;
+	background-color: #FC4A1A;
+}
+
+.buttonset {
+	padding: 10px;
+}
+
+.leftPanel, .rightPanel{
+	float: left;
+	width: 40%;
+	align-items: center;
+	padding-right: 5% 
+
+}
+
+.panels{
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	align-self: center;
+}
+
+body{
+	background-color: #4ABDAC;
+	color: #DFDCE3;
+		font-size: 20px;
+}
+
+button{
+	background-color: #F7B733;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	border-color: #F7B733;
+	border: 0px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	width: 80%;
+}
+
+button:hover{
+	opacity: 0.5;
+	background-color: #FC4A1A;
+	border-color: #F7B733;
+}
+
+h1{
+	background-color: #FC4A1A;
+	text-align:	center;
+	padding: 10px;
+	border-radius: 5px; 
+}
+
+h3{
+	background-color: #FC4A1A;
+	padding: 10px;
+	border-radius: 5px; 
+}
+
+.outcomeText{
+	text-align: center;
+	background-color: #FC4A1A;
+	width: 90%;
+	font-weight: bold;
+}
+
+div{
+	font-family: Helvetica, sans-serif;
+	border-radius: 10px;
+}
+
+.scoreCell {
+	font-size: 25px
+}

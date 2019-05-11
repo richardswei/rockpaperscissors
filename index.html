@@ -10,31 +10,47 @@
 	</script>
 </head>
 <body>
-	<h3>Play Rock Paper Scissors!</h3>
-	<p>Play against the computer in Rock Paper Scissors by clicking one of the following buttons!</p>
-	<div>	
-		<p>SCORE:</p>
-		<table>
-			<tr>
-				<td>You</td>
-				<td>Computer</td>
-			</tr>
-			<tr>
-				<td id="playerScore">0</td>
-				<td id="computerScore">0</td>
-			</tr>
-		</table>
-	</div>
-	<button class="playerChoice" onclick="submitRock()">Rock</button>
-	<button class="playerChoice" onclick="submitPaper()">Paper</button>
-	<button class="playerChoice" onclick="submitScissors()">Scissors</button>
-	<p class="gameOutcome" id="yourChoice"></p>
-	<p class="gameOutcome" id="computerChoice"></p>
-	<p class="gameOutcome" id="gameResult"></p>
+	<h1>Play Rock Paper Scissors!</h1>
+	
+	<div class="panels">
+		<div class=leftPanel>
+			<p>Play against the computer in Rock Paper Scissors by clicking one of the following buttons!</p>
+			<div>	
+				<table>
+					<tr>
+						<td class="scoreCell" colspan="2">Score:</td>
+					</tr>
+					<tr>
+						<td>You</td>
+						<td>Computer</td>
+					</tr>
+					<tr>
+						<td id="playerScore">0</td>
+						<td id="computerScore">0</td>
+					</tr>
+				</table>
+			</div>
+			<div class="buttonset">
+				<button class="playerChoice" onclick="submitRock()">Rock</button>
+				<br>
+				<button class="playerChoice" onclick="submitPaper()">Paper</button>
+				<br>
+				<button class="playerChoice" onclick="submitScissors()">Scissors</button>
+				<br>
+			</div>
+		</div>
+		<div class=rightPanel>
+			<div class="outcomeText">
+				<div class="gameOutcome" id="yourChoice"></div>
+				<div class="gameOutcome" id="computerChoice"></div>
+				<div class="gameOutcome" id="gameResult"></div>
+			</div>
+			<br>
+			<button style="display:none" id="newRound" onclick="restartRound()">New Round</button>
+			<button style="display:none" id="newGame" onclick="restartGame()">New Game</button>
+		</div>
+	</div>	
 
-	<br>
-	<button style="display:none" id="newRound" onclick="restartRound()">New Round</button>
-	<button style="display:none" id="newGame" onclick="restartGame()">New Game</button>
 
 </body>
 </html>
